@@ -1,10 +1,10 @@
 <package>
 	<id>com.jonluca.yakanywhere</id>
 	<name>YakAnywhere</name>
-	<version>1.0-1</version>
+	<version>1.1</version>
 	<compatibility>
 		<firmware>
-			<maxiOS>8.4</maxiOS>
+			<maxiOS>10.2</maxiOS>
 			<otherVersions>unconfirmed</otherVersions>
 			<!--
 			for otherVersions, you can put either unsupported or unconfirmed
@@ -13,9 +13,12 @@
 	</compatibility>
 	<dependencies></dependencies>
 	<descriptionlist>
-		<description>Vote, comment, and submit from anywhere in Yik Yak.</description>
+		<description>Running list of all working repos.</description>
 	</descriptionlist>
 	<screenshots></screenshots>
+	<changelog>
+		<change>Updated repos</change>
+	</changelog>
 	<changelog>
 		<change>Initial release</change>
 	</changelog>
