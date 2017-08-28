@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/jonluca
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jonlu.ca
+  * I am jonluca (https://keybase.io/jonluca) on keybase.
+  * I have a public key ASAtPZVuGAT-5M8NI5FvlwEcLAUKKS6GEgEXrsjja_zohgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01202d3d956e1804fee4cf0d23916f97011c2c050a292e86120117aec8e36bfce8860a",
+      "host": "keybase.io",
+      "kid": "01202d3d956e1804fee4cf0d23916f97011c2c050a292e86120117aec8e36bfce8860a",
+      "uid": "87413bfc4734cfc23838304f8b8f1819",
+      "username": "jonluca"
+    },
+    "merkle_root": {
+      "ctime": 1503534325,
+      "hash": "c6a6fb31b03ea94e5413c4baebede55c82fabbd56e115f28e7a497d271b671f28adba1236b4b2976c78fe2c85a532d5b0f3c6691421e100e20442dfc69134757",
+      "hash_meta": "6edded4b1e8170f4ffebfd74fa06f4cfd9c2e254e1a6fac812ad9c3abe412cdd",
+      "seqno": 1345346
+    },
+    "service": {
+      "hostname": "jonlu.ca",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.28"
+  },
+  "ctime": 1503534331,
+  "expire_in": 504576000,
+  "prev": "3dcb70a8a5521a9dd79eeed8fef5534207cc6e250b4e9c28062ac2c9e419e098",
+  "seqno": 12,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgLT2VbhgE/uTPDSORb5cBHCwFCikuhhIBF67I42v86IYKp3BheWxvYWTFA0B7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMmQzZDk1NmUxODA0ZmVlNGNmMGQyMzkxNmY5NzAxMWMyYzA1MGEyOTJlODYxMjAxMTdhZWM4ZTM2YmZjZTg4NjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMmQzZDk1NmUxODA0ZmVlNGNmMGQyMzkxNmY5NzAxMWMyYzA1MGEyOTJlODYxMjAxMTdhZWM4ZTM2YmZjZTg4NjBhIiwidWlkIjoiODc0MTNiZmM0NzM0Y2ZjMjM4MzgzMDRmOGI4ZjE4MTkiLCJ1c2VybmFtZSI6Impvbmx1Y2EifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE1MDM1MzQzMjUsImhhc2giOiJjNmE2ZmIzMWIwM2VhOTRlNTQxM2M0YmFlYmVkZTU1YzgyZmFiYmQ1NmUxMTVmMjhlN2E0OTdkMjcxYjY3MWYyOGFkYmExMjM2YjRiMjk3NmM3OGZlMmM4NWE1MzJkNWIwZjNjNjY5MTQyMWUxMDBlMjA0NDJkZmM2OTEzNDc1NyIsImhhc2hfbWV0YSI6IjZlZGRlZDRiMWU4MTcwZjRmZmViZmQ3NGZhMDZmNGNmZDljMmUyNTRlMWE2ZmFjODEyYWQ5YzNhYmU0MTJjZGQiLCJzZXFubyI6MTM0NTM0Nn0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJqb25sdS5jYSIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjI4In0sImN0aW1lIjoxNTAzNTM0MzMxLCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6IjNkY2I3MGE4YTU1MjFhOWRkNzllZWVkOGZlZjU1MzQyMDdjYzZlMjUwYjRlOWMyODA2MmFjMmM5ZTQxOWUwOTgiLCJzZXFubyI6MTIsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAFq+dJNcRolbN+lZ0HRPVHRqOmLTQFuNUkwGolhh3lWh4GCWzGILILhq7qacHQbenCiHShvjgO1hkXjm5UIqrCahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIIHhkdhYfl+Hv1sN5D+DrCY93wHGw/KLn5WGLsusjrljo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jonluca
+
+==================================================================
