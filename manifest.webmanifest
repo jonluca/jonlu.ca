@@ -1,0 +1,9 @@
+{
+  "name": "JonLuca DeCaro",
+  "short_name": "JonLuca",
+  "lang": "en-US",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "JonLuca's Site",
+}
