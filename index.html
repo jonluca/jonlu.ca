@@ -157,7 +157,7 @@ if(i)a[i]&&a[i].stop&&r(a[i]);else for(i in a)a[i]&&a[i].stop&&yt.test(i)&&r(a[i
 			</div>
 			<!-- Footer -->
 			<footer id="footer">
-				<p class="copyright">&copy; 2017 JonLuca De Caro</p>
+				<p class="copyright">&copy; 2018 JonLuca De Caro</p>
 			</footer>
 		</div>
 		<!-- BG -->
@@ -168,6 +168,10 @@ if(i)a[i]&&a[i].stop&&r(a[i]);else for(i in a)a[i]&&a[i].stop&&yt.test(i)&&r(a[i
 		        //* set the img src from data-src
 		        $(this).attr('src', $(this).attr('data-src'));
 		    });
+		    var d = new Date(); 
+		    
+		    var text = "&copy; " + d.getFullYear() + " JonLuca De Caro";
+		    $(".copyright").html(text)
 		}));
 		</script>
 	</body>
