@@ -30,3 +30,7 @@
 .fa-envelope-o:before {
     content: "\f003";
 }
+
+.fa-remove:before, .fa-close:before, .fa-times:before {
+    content: "\f00d";
+}
