@@ -22,3 +22,11 @@
 .fa-code:before {
 	content: "\f121"
 }
+
+.fa-github:before {
+    content: "\f09b";
+}
+
+.fa-envelope-o:before {
+    content: "\f003";
+}
