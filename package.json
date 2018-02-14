@@ -1,0 +1,30 @@
+{
+  "name": "jonluca.me",
+  "version": "1.0.0",
+  "description": "This is the source code for https://jonluca.me. Originally inspired by [HTML5UP!](https://html5up.net)",
+  "main": "index.js",
+  "dependencies": {
+    "file-loader": "^1.1.6",
+    "jquery": "^3.3.1",
+    "skel": "0.0.0",
+    "url-loader": "^0.6.2"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.9",
+    "style-loader": "^0.20.1",
+    "webpack": "^3.11.0"
+  },
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonluca/jonluca.me.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonluca/jonluca.me/issues"
+  },
+  "homepage": "https://github.com/jonluca/jonluca.me#readme"
+}
