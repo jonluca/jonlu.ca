@@ -20,7 +20,7 @@
     "webpack": "^3.11.0"
   },
   "scripts": {
-    "build": "webpack -p"
+    "start": "./node_modules/.bin/webpack --config webpack.config.js --watch"
   },
   "repository": {
     "type": "git",
