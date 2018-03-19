@@ -5,7 +5,7 @@ module.exports = {
    */
   apps: [// First application
     {
-      name: 'jonlu.ca',
+      name: 'jonluca',
       "script": "npm",
       "args": "start",
       env: {
