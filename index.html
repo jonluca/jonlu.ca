@@ -38,7 +38,7 @@
     <div id="main">
         <article id="about">
             <h2 class="major">About</h2>
-            <span class="image main"><img data-src="images/Headshot.jpg" alt="" class='lazyload'/></span>
+            <span class="image main"><img src="images/Headshot.jpg" alt="" class='lazyload'/></span>
             <p>I was born and raised in Vicenza, Italy, and moved to Los Angeles in 2014. I'm currently studying
                 Computer Science and Cybersecurity at the <a href="http://viterbi.usc.edu">Viterbi School of
                     Engineering</a>, at USC. I'll be working at <a href="https://apple.com">Apple</a> as a Security
@@ -192,7 +192,7 @@
         <!-- 5 Days -->
         <article id="projects">
             <h2 class="major">5 Days, 5 Projects</h2>
-            <span class="image main"><img class='lazyload' data-src="images/pic02.png" alt=""/></span>
+            <span class="image main"><img class='lazyload' src="images/pic02.png" alt=""/></span>
             <p>Over Spring Break 2017, I built five products in five days. The projects are listed below. </p>
             <h4>5 Days, 5 Projects</h4>
             <ul>
@@ -265,16 +265,5 @@
 </div>
 <!-- BG -->
 <div id="bg"></div>
-<script>
-  $(window).on('load', (function () {
-    $('.lazyload').each(function () {
-      //* set the img src from data-src
-      $(this).attr('src', $(this).attr('data-src'));
-    });
-    var d = new Date();
-    var text = "&copy; " + d.getFullYear() + " JonLuca De Caro";
-    $(".copyright").html(text);
-  }));
-</script>
 </body>
 </html>
