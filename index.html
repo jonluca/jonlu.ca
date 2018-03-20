@@ -11,6 +11,11 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
     <script src="dist/bundle.js"></script>
 </head>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('js/service-worker.js');
+  }
+</script>
 <body>
 <!-- Wrapper -->
 <div id="wrapper">
@@ -35,7 +40,7 @@
             </ul>
         </nav>
     </header>
-g    <div id="main">
+    <div id="main">
         <article id="about">
             <h2 class="major">About</h2>
             <span class="image main"><img data-src="images/Headshot.jpg" alt="" class='lazyload'/></span>

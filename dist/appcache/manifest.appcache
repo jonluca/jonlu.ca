@@ -1,0 +1,14 @@
+CACHE MANIFEST
+#ver:2018-3-19 20:32:23
+#plugin:4.9.0
+
+CACHE:
+../commons.bundle.js
+../vendor.bundle.js
+../app.bundle.js
+
+NETWORK:
+*
+
+FALLBACK:
+/ /index.html
