@@ -17,9 +17,11 @@
     "compression-webpack-plugin": "^1.1.11",
     "css-loader": "^0.28.9",
     "html-webpack-plugin": "^2.30.1",
+    "npm-install-webpack-plugin": "^4.0.5",
     "style-loader": "^0.20.1",
     "uglifyjs-webpack-plugin": "^1.1.8",
-    "webpack-cli": "^2.0.12"
+    "webpack-cli": "^2.0.12",
+    "zopfli-webpack-plugin": "^0.1.0"
   },
   "scripts": {
     "start": "./node_modules/.bin/webpack --config webpack.config.js --watch"

@@ -1,9 +1,9 @@
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const CompressionPlugin = require("compression-webpack-plugin");
+const ZopfliPlugin = require("zopfli-webpack-plugin");
 
 module.exports = {
   entry: './js/app.js',
-  mode:'production',
+  mode: 'production',
   output: {
     path: __dirname + '/dist',
     filename: 'bundle.js'
@@ -19,8 +19,12 @@ module.exports = {
   },
   plugins: [new UglifyJsPlugin({
     test: /\.js($|\?)/i
-  }), new CompressionPlugin({
-    test: /\./
+  }), new ZopfliPlugin({
+    asset: "[path].gz[query]",
+    algorithm: "zopfli",
+    test: /\.(js|html)$/,
+    threshold: 10240,
+    minRatio: 0.8
   })]
 
 };
