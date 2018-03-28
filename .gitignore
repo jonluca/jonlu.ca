@@ -3,3 +3,4 @@ node_modules/
 *.gz
 dist/
 dist/*
+.cache/
