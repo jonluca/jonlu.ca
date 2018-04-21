@@ -163,7 +163,7 @@ h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
 }
 
 h1 {
-    font-size: 2.25rem;
+    font-size: 3.25rem;
     line-height: 1.3;
     letter-spacing: 0.5rem
 }
@@ -326,107 +326,6 @@ label {
     line-height: 1.5;
     margin: 0 0 1rem 0;
     text-transform: uppercase
-}
-
-input[type="text"], input[type="password"], input[type="email"], input[type="tel"], select, textarea {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-    -moz-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-    -webkit-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-    -ms-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-    background: transparent;
-    border-radius: 4px;
-    border: solid 1px #ffffff;
-    color: inherit;
-    display: block;
-    outline: 0;
-    padding: 0 1rem;
-    text-decoration: none;
-    width: 100%
-}
-
-input[type="text"]:invalid, input[type="password"]:invalid, input[type="email"]:invalid, input[type="tel"]:invalid, select:invalid, textarea:invalid {
-    box-shadow: none
-}
-
-input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="tel"]:focus, select:focus, textarea:focus {
-    background: rgba(255, 255, 255, 0.075);
-    border-color: #ffffff;
-    box-shadow: 0 0 0 1px #ffffff
-}
-
-select option {
-    background: #1b1f22;
-    color: #ffffff
-}
-
-.select-wrapper {
-    text-decoration: none;
-    display: block;
-    position: relative
-}
-
-.select-wrapper:before {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: none !important
-}
-
-.select-wrapper:before {
-    color: #ffffff;
-    content: '\f107';
-    display: block;
-    height: 2.75rem;
-    line-height: calc(2.75rem + 0em);
-    pointer-events: none;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    top: 0;
-    width: 2.75rem
-}
-
-.select-wrapper select::-ms-expand {
-    display: none
-}
-
-input[type="text"], input[type="password"], input[type="email"], select {
-    height: 2.75rem
-}
-
-textarea {
-    padding: 0.75rem 1rem
-}
-
-::-webkit-input-placeholder {
-    color: rgba(255, 255, 255, 0.5) !important;
-    opacity: 1.0
-}
-
-:-moz-placeholder {
-    color: rgba(255, 255, 255, 0.5) !important;
-    opacity: 1.0
-}
-
-::-moz-placeholder {
-    color: rgba(255, 255, 255, 0.5) !important;
-    opacity: 1.0
-}
-
-:-ms-input-placeholder {
-    color: rgba(255, 255, 255, 0.5) !important;
-    opacity: 1.0
-}
-
-.formerize-placeholder {
-    color: rgba(255, 255, 255, 0.5) !important;
-    opacity: 1.0
 }
 
 .box {
@@ -1050,10 +949,6 @@ body.is-loading #bg:before {
 }
 
 #header .content {
-    border-style: solid;
-    border-color: black;
-    border-top-width: 1px;
-    border-bottom-width: 1px;
     max-width: 100%
 }
 
