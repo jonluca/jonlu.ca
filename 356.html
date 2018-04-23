@@ -567,11 +567,18 @@
   });
 
   function calculateScore(traces, perf) {
-    if (perf > 93 || perf < 40) {
+    if (perf > 93) {
+      return 100;
+    }
+    if (perf < 56) {
       return 0;
     }
     var traceScore = .15 * ((traces / 11) * 100);
-    var perfScore = 0.85 * (95.78672 + (-0.01512836 - 95.78672) / (1 + Math.pow(Math.pow((perf / 55.86139), 1353.811), 0.006513422)));
+    var offset = 95.78672;
+    var divisor = -95.80184836000001;
+    var firstPow = Math.pow((perf / 55.86139), 1353.811);
+    var secondPow = Math.pow((1 + firstPow), 0.006513422);
+    var perfScore = 0.85 * (offset + divisor / secondPow);
     return Math.round(traceScore + perfScore);
   }
 </script>
