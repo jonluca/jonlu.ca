@@ -564,10 +564,10 @@
   });
 
   function calculateScore(traces, perf) {
-    if (perf > 93) {
+    if (perf > 93 || perf > 97) {
       return 100;
     }
-    if (perf < 56) {
+    if (perf < 56 || traces < 0 || traces > 11) {
       return 0;
     }
     var traceScore = .15 * ((traces / 11) * 100);
