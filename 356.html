@@ -541,7 +541,7 @@
     var secondPow = Math.pow((1 + firstPow), 0.006513422);
     var perfScore = 0.85 * (offset + divisor / secondPow);
     if (perf > 93) {
-      perfScore = 100;
+      perfScore = 85;
     }
     return Math.round(traceScore + perfScore);
   }
