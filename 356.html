@@ -534,7 +534,7 @@
     if (perf < 56 || traces < 0 || traces > 11) {
       return 0;
     }
-    var traceScore = .15 * ((traces / 11) * 100);
+    var traceScore = .15 * ((traces / 11.0) * 100);
     var offset = 95.78672;
     var divisor = -95.80184836000001;
     var firstPow = Math.pow((perf / 55.86139), 1353.811);
