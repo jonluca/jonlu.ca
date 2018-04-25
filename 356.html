@@ -534,14 +534,14 @@
     if (perf < 56 || traces < 0 || traces > 11) {
       return 0;
     }
-    var traceScore = .15 * ((traces / 11.0) * 100);
+    var traceScore = .3 * ((traces / 11.0) * 100);
     var offset = 95.78672;
     var divisor = -95.80184836000001;
     var firstPow = Math.pow((perf / 55.86139), 1353.811);
     var secondPow = Math.pow((1 + firstPow), 0.006513422);
-    var perfScore = 0.85 * (offset + divisor / secondPow);
+    var perfScore = 0.7 * (offset + divisor / secondPow);
     if (perf > 93) {
-      perfScore = 85;
+      perfScore = 70;
     }
     return Math.round(traceScore + perfScore);
   }
