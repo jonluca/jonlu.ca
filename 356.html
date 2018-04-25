@@ -392,7 +392,7 @@
         text-decoration: none;
     }
 
-    .welcome {
+    .scoreH1 {
         width: 100%;
         height: 50px;
         position: relative;
@@ -404,40 +404,6 @@
     .welcome-left {
         transform: translateY(-780px);
         opacity: 1;
-    }
-
-    .cover-photo {
-        height: 150px;
-        position: relative;
-        left: 0px;
-        top: -900px;
-        background: linear-gradient(
-                rgba(35, 43, 85, 0.75),
-                rgba(35, 43, 85, 0.95)),
-        url(https://dl.dropboxusercontent.com/u/22006283/preview/codepen/landscape-nature-man-person.jpeg);
-        background-size: cover;
-        opacity: 0;
-        transition: all 1.5s ease 0.55s;
-    }
-
-    .cover-photo-down {
-        top: -575px;
-        opacity: 1;
-    }
-
-    .profile-photo {
-        height: 125px;
-        width: 125px;
-        position: relative;
-        border-radius: 70px;
-        left: 155px;
-        top: -1000px;
-        background: url(https://dl.dropboxusercontent.com/u/22006283/preview/codepen/nature-water-rocks-hiking.jpg);
-        background-size: 100% 135%;
-        background-position: 100% 100%;
-        opacity: 0;
-        transition: top 1.5s ease 0.35s, opacity .75s ease .5s;
-        border: solid 3px #ffffff;
     }
 
     .profile-photo-down {
@@ -525,14 +491,14 @@
                 <label for="Traces"># Traces Correct (out of 11)</label>
                 <input id="traces" class="form-styling" type="text" name="Traces" placeholder=""/>
                 <label for="Performance">Performance Score (out of 100)</label>
-                <input id="perf" class="form-styling" type="text" name="Performance" placeholder=""/>
+                <input id="Performance" class="form-styling" type="text" name="Performance" placeholder=""/>
                 <div class="btn-animate">
                     <a class="btn-signin">Calculate Score</a>
                 </div>
             </form>
         </div>
         <div>
-            <h1 id="score" class="welcome"></h1>
+            <h1 id="score" class="scoreH1"></h1>
             <a class="btn-goback" onClick="history.go()">Go back</a>
         </div>
     </div>
@@ -541,7 +507,7 @@
   $(function () {
     $(".btn-signin").click(function () {
       var tracesCorrect = $("#traces").val();
-      var perfScore = $("#perf").val();
+      var perfScore = $("#Performance").val();
 
       var intTraces = parseInt(tracesCorrect);
       var intPerf = parseInt(perfScore);
@@ -554,7 +520,7 @@
       }
       console.log(tracesCorrect);
       $(".btn-animate").toggleClass("btn-animate-grow");
-      $(".welcome").toggleClass("welcome-left");
+      $(".scoreH1").toggleClass("welcome-left");
       $(".cover-photo").toggleClass("cover-photo-down");
       $(".frame").toggleClass("frame-short");
       $(".profile-photo").toggleClass("profile-photo-down");
@@ -564,9 +530,7 @@
   });
 
   function calculateScore(traces, perf) {
-    if (perf > 93 || perf > 97) {
-      return 100;
-    }
+    
     if (perf < 56 || traces < 0 || traces > 11) {
       return 0;
     }
@@ -576,6 +540,9 @@
     var firstPow = Math.pow((perf / 55.86139), 1353.811);
     var secondPow = Math.pow((1 + firstPow), 0.006513422);
     var perfScore = 0.85 * (offset + divisor / secondPow);
+    if (perf > 93) {
+      perfScore = 100;
+    }
     return Math.round(traceScore + perfScore);
   }
 </script>
