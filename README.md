@@ -1,3 +1,3 @@
-# jonluca.me
+# Personal Site
 
-This is the source code for https://jonluca.me. Originally inspired by [HTML5UP!](https://html5up.net)
+This is the code for https://jonlu.ca, my personal site.
