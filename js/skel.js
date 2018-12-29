@@ -32,7 +32,8 @@ var skel = function () {
     _canUse: null,
     canUse: function (e) {
       t._canUse || (t._canUse = document.createElement("div"));
-      var n = t._canUse.style, i = e.charAt(0).toUpperCase() + e.slice(1);
+      var n = t._canUse.style,
+        i = e.charAt(0).toUpperCase() + e.slice(1);
       return e in n || "Moz" + i in n || "Webkit" + i in n || "O" + i in n || "ms" + i in n;
     },
     on: function (e, n) {
@@ -123,7 +124,8 @@ var skel = function () {
     },
     _attach: null,
     attach: function (e) {
-      var n = t.obj.head, i = e.element;
+      var n = t.obj.head,
+        i = e.element;
       return i.parentNode && i.parentNode.tagName ? !1 : (t._attach || (t._attach = n.firstChild), n.insertBefore(i, t._attach.nextSibling), e.permanent && (t._attach = i), !0);
     },
     attachAll: function (e) {
@@ -187,7 +189,11 @@ var skel = function () {
           }
         }
 
-        var e, n = [], i = document, a = "DOMContentLoaded", r = /^loaded|^c/.test(i.readyState);
+        var e,
+          n = [],
+          i = document,
+          a = "DOMContentLoaded",
+          r = /^loaded|^c/.test(i.readyState);
         return i.addEventListener(a, e = function () {
           i.removeEventListener(a, e), t();
         }), function (t) {
@@ -202,8 +208,17 @@ var skel = function () {
           }
         }
 
-        var n, i = [], a = !1, r = document, o = r.documentElement, s = o.doScroll, c = "DOMContentLoaded",
-          d = "addEventListener", u = "onreadystatechange", l = "readyState", f = s ? /^loaded|^c/ : /^loaded|c/,
+        var n,
+          i = [],
+          a = !1,
+          r = document,
+          o = r.documentElement,
+          s = o.doScroll,
+          c = "DOMContentLoaded",
+          d = "addEventListener",
+          u = "onreadystatechange",
+          l = "readyState",
+          f = s ? /^loaded|^c/ : /^loaded|c/,
           h = f.test(r[l]);
         return r[d] && r[d](c, n = function () {
           r.removeEventListener(c, n, a), e();
@@ -229,7 +244,9 @@ var skel = function () {
         if ("string" == typeof t) {
           return t.indexOf(e);
         }
-        var n, i, a = e ? e : 0;
+        var n,
+          i,
+          a = e ? e : 0;
         if (!this) {
           throw new TypeError;
         }
@@ -250,7 +267,8 @@ var skel = function () {
         if (!t) {
           return [];
         }
-        var n, i = Object.keys(t);
+        var n,
+          i = Object.keys(t);
         for (n = 0; i[n] && e(i[n], t[i[n]]) !== !1; n++) {
 
         }
@@ -277,7 +295,9 @@ var skel = function () {
         if ("" == t) {
           return !0;
         }
-        var e = document.createElement("style"), n = document.getElementsByTagName("script")[0], i = null;
+        var e = document.createElement("style"),
+          n = document.getElementsByTagName("script")[0],
+          i = null;
         e.type = "text/css", e.id = "matchmediajs-test", n.parentNode.insertBefore(e, n), i = "getComputedStyle" in window && window.getComputedStyle(e, null) || e.currentStyle;
         var a = "@media " + t + "{ #matchmediajs-test { width: 1px; } }";
         return e.styleSheet ? e.styleSheet.cssText = a : e.textContent = a, "1px" === i.width;
@@ -285,17 +305,23 @@ var skel = function () {
         if ("" == t) {
           return !0;
         }
-        var e, n, i, a, r = {
-          "min-width": null,
-          "max-width": null
-        }, o = !1;
+        var e,
+          n,
+          i,
+          a,
+          r = {
+            "min-width": null,
+            "max-width": null
+          },
+          o = !1;
         for (i = t.split(/\s+and\s+/), e = 0; e < i.length; e++) {
           n = i[e], "(" == n.charAt(0) && (n = n.substring(1, n.length - 1), a = n.split(/:\s+/), 2 == a.length && (r[a[0].replace(/^\s+|\s+$/g, "")] = parseInt(a[1]), o = !0));
         }
         if (!o) {
           return !1;
         }
-        var s = document.documentElement.clientWidth, c = document.documentElement.clientHeight;
+        var s = document.documentElement.clientWidth,
+          c = document.documentElement.clientHeight;
         return null !== r["min-width"] && s < r["min-width"] || null !== r["max-width"] && s > r["max-width"] || null !== r["min-height"] && c < r["min-height"] || null !== r["max-height"] && c > r["max-height"] ? !1 : !0;
       }, navigator.userAgent.match(/MSIE ([0-9]+)/) && RegExp.$1 < 9 && (t.newStyle = function (t) {
         var e = document.createElement("span");
@@ -303,7 +329,10 @@ var skel = function () {
       });
     },
     initVars: function () {
-      var e, n, i, a = navigator.userAgent;
+      var e,
+        n,
+        i,
+        a = navigator.userAgent;
       e = "other", n = 0, i = [["firefox", /Firefox\/([0-9\.]+)/], ["bb", /BlackBerry.+Version\/([0-9\.]+)/], ["bb", /BB[0-9]+.+Version\/([0-9\.]+)/], ["opera", /OPR\/([0-9\.]+)/], ["opera", /Opera\/([0-9\.]+)/], ["edge", /Edge\/([0-9\.]+)/], ["safari", /Version\/([0-9\.]+).+Safari/], ["chrome", /Chrome\/([0-9\.]+)/], ["ie", /MSIE ([0-9]+)/], ["ie", /Trident\/.+rv:([0-9]+)/]], t.iterate(i, function (t, i) {
         return a.match(i[1]) ? (e = i[0], n = parseFloat(RegExp.$1), !1) : void 0;
       }), t.vars.browser = e, t.vars.browserVersion = n, e = "other", n = 0, i = [["ios", /([0-9_]+) like Mac OS X/, function (t) {

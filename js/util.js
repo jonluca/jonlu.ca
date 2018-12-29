@@ -11,7 +11,9 @@
 
     $a.each(function () {
 
-      var $this = $(this), indent = Math.max(0, $this.parents('li').length - 1), href = $this.attr('href'),
+      var $this = $(this),
+        indent = Math.max(0, $this.parents('li').length - 1),
+        href = $this.attr('href'),
         target = $this.attr('target');
 
       b.push('<a ' + 'class="link depth-' + indent + '"' + ((typeof target !== 'undefined' && target != '') ? ' target="' + target + '"' : '') + ((typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') + '>' + '<span class="indent-' + indent + '"></span>' + $this.text() + '</a>');
@@ -46,7 +48,11 @@
     }
 
     // Vars.
-    var $this = $(this), $body = $('body'), $window = $(window), id = $this.attr('id'), config;
+    var $this = $(this),
+      $body = $('body'),
+      $window = $(window),
+      id = $this.attr('id'),
+      config;
 
     // Config.
     config = $.extend({
@@ -139,7 +145,9 @@
       $this
         .on('click', 'a', function (event) {
 
-          var $a = $(this), href = $a.attr('href'), target = $a.attr('target');
+          var $a = $(this),
+            href = $a.attr('href'),
+            target = $a.attr('target');
 
           if (!href || href == '#' || href == '' || href == '#' + id) {
             return;
@@ -182,13 +190,16 @@
       }
 
       var diffX = $this.touchPosX - event.originalEvent.touches[0].pageX,
-        diffY = $this.touchPosY - event.originalEvent.touches[0].pageY, th = $this.outerHeight(),
+        diffY = $this.touchPosY - event.originalEvent.touches[0].pageY,
+        th = $this.outerHeight(),
         ts = ($this.get(0).scrollHeight - $this.scrollTop());
 
       // Hide on swipe?
       if (config.hideOnSwipe) {
 
-        var result = false, boundary = 20, delta = 50;
+        var result = false,
+          boundary = 20,
+          delta = 50;
 
         switch (config.side) {
 
@@ -459,7 +470,8 @@
         $this.find('input,textarea')
           .each(function () {
 
-            var i = $(this), x;
+            var i = $(this),
+              x;
 
             i.removeClass('polyfill-placeholder');
 
@@ -531,7 +543,9 @@
     // Step through elements.
     $elements.each(function () {
 
-      var $e = $(this), $p, $parent = $e.parent();
+      var $e = $(this),
+        $p,
+        $parent = $e.parent();
 
       // No parent? Bail.
       if ($parent.length == 0) {
