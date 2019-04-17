@@ -34,6 +34,7 @@ system("gzip -f Packages");
 # scan again because we zipped the original file  
 system("dpkg-scanpackages --multiversion debs / > Packages");
 
+system("cp Release-Template Release");
 # calculate the hashes and write to Release  
 open(RLS, ">> Release");
 
