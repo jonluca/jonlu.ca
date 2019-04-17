@@ -40,16 +40,6 @@ system("cp Release-Template Release");
 # calculate the hashes and write to Release  
 open(RLS, ">> Release");
 
-@files = ("Packages", "Packages.gz", "Packages.bz2");
-my $output = "";
-
-foreach (@files) {
- 	my $fname = $_;
-	my $md5 =  md5sum($fname);
-	my $size = -s $fname;
-	$output = $output.$md5." ".$size." ".$fname."\n";
-};
-
 print RLS $output;
 close(RLS);
 
