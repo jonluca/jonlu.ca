@@ -59,4 +59,6 @@ system("rm Release.gpg");
 # generate Release.gpg  
 system("gpg -abs -o Release.gpg Release");
 
+system("cat Release Release.gpg > InRelease");
+
 exit 0;
