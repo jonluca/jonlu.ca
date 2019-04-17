@@ -1,6 +1,5 @@
 node_modules/
 .idea/
-*.gz
 dist/
 dist/*
 .cache/

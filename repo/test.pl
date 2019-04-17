@@ -22,6 +22,8 @@ sub md5sum {
     return $digest;
 }
 
+system("touch Packages && rm Packages");
+
 # scan the packages and write output to file Packages 
 system("dpkg-scanpackages --multiversion debs / > Packages");
 
