@@ -290,6 +290,22 @@ Description: Always show timestamps on Snaps and Stories!
 Author: JonLuca
 Name: SnapTime
 
+Package: com.jonluca.sslkillswitch2
+Version: 0.12-1+debug
+Architecture: iphoneos-arm
+Maintainer: JonLuca DeCaro <jonluca.decaro@gmail.com>
+Installed-Size: 112
+Depends: mobilesubstrate, preferenceloader
+Filename: debs/com.jonluca.sslkillswitch2_0.12-1+debug_iphoneos-arm.deb
+Size: 8196
+MD5sum: e4dbe216cfabd0a2441db53d85e9af2e
+SHA1: 3971ee9d33838dd4d3c96bb9a3e7a591bdcc7b07
+SHA256: 132a4f6fcf52f86510aafb7ef0d2cc322fae66ccc07c7128412d891391c0f6c0
+Section: Tweaks
+Description: Blackbox tool to disable SSL certificate validation - including certificate pinning - within iOS and OS X Apps. Reupload for iOS 12, original author Alban Diquet
+Author: JonLuca DeCaro <jonluca.decaro@gmail.com>
+Name: SSL Kill Switch 2
+
 Package: com.jonluca.yakanywhere
 Version: 0.1b-1
 Architecture: iphoneos-arm
