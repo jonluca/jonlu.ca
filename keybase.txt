@@ -1,0 +1,89 @@
+==================================================================
+https://keybase.io/jonluca
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jonlu.ca
+  * I am jonluca (https://keybase.io/jonluca) on keybase.
+  * I have a public key with fingerprint 849E 61D1 7094 A964 866A  E510 E6DC 4811 DD59 3AC7
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01202d3d956e1804fee4cf0d23916f97011c2c050a292e86120117aec8e36bfce8860a",
+      "fingerprint": "849e61d17094a964866ae510e6dc4811dd593ac7",
+      "host": "keybase.io",
+      "key_id": "e6dc4811dd593ac7",
+      "kid": "01018e31f7dacc1a4ea845f90a454378b479c817cf4d51fbbdb9edbf44db55cd6d730a",
+      "uid": "87413bfc4734cfc23838304f8b8f1819",
+      "username": "jonluca"
+    },
+    "merkle_root": {
+      "ctime": 1549270325,
+      "hash_meta": "ad187d3f8bece8d58a8f6b3e52a2d8753dc441b61a7b38bc7c1b0a219d3ae5ba",
+      "seqno": 4691553
+    },
+    "revoke": {
+      "sig_ids": [
+        "2f2b1a9df58b85ba9efdb0f41fecd4b381bdfd69066f3c75f24ddcaee80f897f0f"
+      ]
+    },
+    "service": {
+      "hostname": "jonlu.ca",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1549270344,
+  "expire_in": 157680000,
+  "prev": "327e8d2d0a7ee54289b44b73bf50615542547bfa1aa9ce8ba0d0c041c47be728",
+  "seqno": 20,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.80
+Comment: https://keybase.io/crypto
+
+yMQBAnicbZN7bBRFHMevPAoUayE8JTxkqQIF6s7u7O7sCVRqGnkoDwlgKfU6szPT
+Xnu9vd5tz7a01PgIIi1VQZAGTJBAeWhjQWOFGB5CIZSCwdRSCiko0AgirY0GIYCz
+jURj3P1jM5Pv7/v7/j6zcyy+tycu5vrF2YMvpXtPxDQeLSj0rFh2f/ZKidi0WPKu
+lPJYz4cFKIs4vjw/lbySDBRZoSo1NZ0BJEPOGLS4TBXVBDo3DRkAS7FkTcaKqTCk
+CzkABmYWYqpOuMUQ0mUsTZW4P5jNwqGwP+gIWwRNpgMKDNmE2NQh0nXMNCAznVoQ
+AUCpZqrYMkRhjh1xK0Q4giMs2W+LPbHw9cT7H/2j3DIQEQA3KLYsgCHDCGrclDHU
+oGogAg3TQsCwOKQa4IRQYjJKOISUaJpFdWqoPbkLe+yQAYEqxoGGKsa3FBWJV9BA
+BHGAgOkKIywcxPlMqHPtYKDQwlLZVCmfhfMCzBe2bcdlazl+VwE0aCqGrCqamA9H
+cnz5zMGiEFOADKoKWybIUQ1hxHWiMk3BCkWGpoppISA6wAZREbEMCxBBHphUFfiI
+mzfCCoK25IW6CTRNFQnCLGrnMbd5xJ8tqEUkb4akcIUAbFKuiQlEock4JTKHgDOL
+QuENCOVUN2Vd56plaFyBlFqYMSRzZBpc5lJmmdssHPVbPebuMf17/GTLTRMK245t
+2QGxm+M4oYjXZeIUh1zZa4z4/jbwEX+Qih9EVERZOOK3g4KRUP4HF4RTJVYU8oeZ
+z+8qNENHsnjcPiwqLFXFENgUKmODMQ0qyCQQEkOcnCbrggdUNGgQjgHGpgBMsExl
+S4ZAnCthhoL+4acIUwdnC09BLYidwjCTyo4eWdHHExPnie3by705nrgBgx7dJ7M5
+4aGTX90x5N64lAt5V7+ATdv3frDBs2Vxxv3VxoOSHV1r993cffb6j79srSqddLG1
+ZHBmTfrQQFXv+JplnxY8s7yqtC6lcvvY+u7MG+UvNX9UHSLR1s5r8241D6wbX+nr
+zDyQOftQ0pdJg0sD0sUidVg7WrtL/fDE4s6qey0zanOrW/qqV58ddzKliB9Ind5/
+zmePrRu6uzVjVKK07lv/xhHP5Y4Zk/X5wzuxc179On7u8y33L585vb5hT0zm0kuj
+r5SdHxTnqUl7ozx19CfzUzr/2DZyWetb14PF+5h5pmXBpKbUn9sm382dtbByS9rv
+jd2hNZ7EAXZ9dfvdksO7Kpp2/TD99eHrsx98vOpE893yxOz3s7aWbn67NTD96eFd
+8WkThk0un7Izr+2dru5bB5OvJBRybfnE/rYnfeOSU8c2XZmZe2vDntgJl/9seGI/
+cxpuX9jefmfkzOLy9Cng12n7F05aNSv3ybQZhy5lNN4uSd5fsyhhclXFV2eN/uqS
+2uOPvzG/wfLFTizNfzl6tLs6gRy/09FWsK1b7ndwDR+2t1dWxc3vuxY0v3sy67uE
+KS/cOKwk1iZNK1pw9sjanVkdjU81nvom6aeWq5sSe7UFe1cMaRo44sXKjtW/RXYs
+T609fW3puUP1+7z1GW/WnBv1Sriu35D3cHtNdKz/5ObzaW3zRi4aM37R7Wirr1mb
+aFXMq4M5c7P0QdP67N76F54uA9I=
+=Fo8z
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jonluca
+
+==================================================================
+
