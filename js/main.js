@@ -40,7 +40,7 @@
       $nav_li.eq(($nav_li.length / 2)).addClass('is-middle');
     }
     // Main.
-    var delay = 100,
+    var delay = 0,
       locked = false;
     // Methods.
     $main._show = function (id, initial) {
@@ -268,7 +268,8 @@
         $main._show(location.hash.substr(1), true);
       });
     }
-
-    $("#hidden").css('display','block')
+    setTimeout(function(){
+        $("#hidden").css('opacity','1')
+    }, 0)
   });
 })(jQuery);
