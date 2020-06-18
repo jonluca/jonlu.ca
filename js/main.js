@@ -268,5 +268,7 @@
         $main._show(location.hash.substr(1), true);
       });
     }
+
+    $("#hidden").css('display','block')
   });
 })(jQuery);
