@@ -15,7 +15,7 @@
     "babel-core": "6.26.3",
     "babel-loader": "8.1.0",
     "babel-preset-es2015": "6.24.1",
-    "compression-webpack-plugin": "4.0.0",
+    "compression-webpack-plugin": "4.0.1",
     "css-loader": "3.6.0",
     "html-webpack-plugin": "4.3.0",
     "npm-install-webpack-plugin": "4.0.5",
