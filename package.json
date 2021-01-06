@@ -9,7 +9,7 @@
     "jquery": "^3.5.1",
     "skel": "0.0.0",
     "url-loader": "^4.1.0",
-    "webpack": "^4.43.0"
+    "webpack": "^5.0.0"
   },
   "devDependencies": {
     "babel-core": "6.26.3",
