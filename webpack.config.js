@@ -1,4 +1,3 @@
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
 const zopfli = require('@gfx/zopfli');
 
@@ -10,17 +9,24 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    rules: [{
+    rules: [ {
+                test: /\.(js|jsx)$/,
+                exclude: '/node_modules/',
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/env']
+                    }
+                }
+            },{
       test: /\.css$/,
-      loaders: ['style-loader', 'css-loader']
+      use: ['style-loader', 'css-loader']
     }, {
       test: /(fonts|images)/,
-      loaders: ['url-loader']
+      use: ['url-loader']
     }]
   },
-  plugins: [new UglifyJsPlugin({
-    test: /\.js($|\?)/i
-  }), new CompressionPlugin({
+  plugins: [ new CompressionPlugin({
     compressionOptions: {
       numiterations: 15
     },
